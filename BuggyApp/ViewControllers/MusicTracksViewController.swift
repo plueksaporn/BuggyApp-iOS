@@ -21,10 +21,6 @@ class MusicTracksViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
-    tableView.estimatedRowHeight = CGFloat(140.0)
-//    tableView.estimatedRowHeight = 500
-    tableView.rowHeight = UITableView.automaticDimension
-    
     
     APIManager.shared.getArtistInfo(artistName: "taylorswift") { [weak self] result in
       switch result {
@@ -37,6 +33,9 @@ class MusicTracksViewController: UIViewController {
         self?.present(alert, animated: true)
       }
     }
+    tableView.estimatedRowHeight = CGFloat(140.0)
+    //    tableView.estimatedRowHeight = 500
+    tableView.rowHeight = UITableView.automaticDimension
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -53,6 +52,7 @@ extension MusicTracksViewController: UITableViewDataSource {
     return tracks.isEmpty ? 0 : 10
 //    return tracks.count
   }
+
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: TrackTableViewCell.CellIdentifier, for: indexPath) as? TrackTableViewCell else {
