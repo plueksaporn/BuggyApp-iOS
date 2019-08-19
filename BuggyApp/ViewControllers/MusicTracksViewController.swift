@@ -22,6 +22,9 @@ class MusicTracksViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     tableView.estimatedRowHeight = CGFloat(140.0)
+//    tableView.estimatedRowHeight = 500
+    tableView.rowHeight = UITableView.automaticDimension
+    
     
     APIManager.shared.getArtistInfo(artistName: "taylorswift") { [weak self] result in
       switch result {
@@ -48,6 +51,7 @@ class MusicTracksViewController: UIViewController {
 extension MusicTracksViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return tracks.isEmpty ? 0 : 10
+//    return tracks.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
