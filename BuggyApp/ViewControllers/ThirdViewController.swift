@@ -16,7 +16,12 @@ class ThirdViewController: UIViewController {
     // Do any additional setup after loading the view.
   }
    
-    @IBAction func onClick(_ sender: Any) {
+    @IBAction func onClick(_ sender: AnyObject) {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let secondController = storyboard.instantiateViewController(withIdentifier: "secondary") as! SecondaryViewController
+//        SecondaryViewController.mL.text = "Hello!"
+        
+        present(secondController, animated: true)
         
     }
 }

@@ -24,7 +24,7 @@
 		BFEFE83222C621DC00A3B7EB /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEFE82C22C621DC00A3B7EB /* First.storyboard */; };
 		BFEFE83322C621DC00A3B7EB /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEFE82E22C621DC00A3B7EB /* Second.storyboard */; };
 		BFEFE83422C621DC00A3B7EB /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEFE83022C621DC00A3B7EB /* Third.storyboard */; };
-		E4431E83230AA69D00EB53F3 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4431E82230AA69D00EB53F3 /* FourViewController.swift */; };
+		E4431E85230AAB2A00EB53F3 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4431E84230AAB2A00EB53F3 /* SecondaryViewController.swift */; };
 		F08174CB247441A80243B657 /* Pods_BuggyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662E6907135100BC9FA04336 /* Pods_BuggyAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +65,7 @@
 		BFEFE82D22C621DC00A3B7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/First.storyboard; sourceTree = "<group>"; };
 		BFEFE82F22C621DC00A3B7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Second.storyboard; sourceTree = "<group>"; };
 		BFEFE83122C621DC00A3B7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Third.storyboard; sourceTree = "<group>"; };
-		E4431E82230AA69D00EB53F3 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		E4431E84230AAB2A00EB53F3 /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +172,7 @@
 				AE2873C922CA8B7B004B4671 /* MusicTracksViewController.swift */,
 				AE2873CB22CA8BA7004B4671 /* MusicTrackDetailViewController.swift */,
 				BF1E2B4122C5D69500C65524 /* ThirdViewController.swift */,
-				E4431E82230AA69D00EB53F3 /* FourViewController.swift */,
+				E4431E84230AAB2A00EB53F3 /* SecondaryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -350,7 +350,6 @@
 			files = (
 				BF1E2B1822C5CEE800C65524 /* AppDelegate.swift in Sources */,
 				BFEFE82422C60CD800A3B7EB /* Model.swift in Sources */,
-				E4431E83230AA69D00EB53F3 /* FourViewController.swift in Sources */,
 				AE2873CC22CA8BA7004B4671 /* MusicTrackDetailViewController.swift in Sources */,
 				AE2873CA22CA8B7B004B4671 /* MusicTracksViewController.swift in Sources */,
 				AE2873C822CA78E0004B4671 /* TrackTableViewCell.swift in Sources */,
@@ -358,6 +357,7 @@
 				BFEFE82622C615A400A3B7EB /* CurrencyCell.swift in Sources */,
 				BF1E2B4222C5D69500C65524 /* ThirdViewController.swift in Sources */,
 				BF1E2B1A22C5CEE800C65524 /* FirstViewController.swift in Sources */,
+				E4431E85230AAB2A00EB53F3 /* SecondaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  FourViewController.swift
+//  SecondaryViewController.swift
 //  BuggyApp
 //
 //  Created by Plueksaporn Kattiyawong on 19/8/2562 BE.
@@ -8,9 +8,8 @@
 
 import UIKit
 
-class FourViewController: UIViewController {
+class SecondaryViewController: UIViewController {
 
-    @IBOutlet weak var mLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
