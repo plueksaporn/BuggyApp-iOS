@@ -9,8 +9,14 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
-  override func viewDidLoad() {
+    @IBOutlet weak var mBtn: UIButton!
+    @IBOutlet weak var mText: UITextField!
+    override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
   }
+   
+    @IBAction func onClick(_ sender: Any) {
+        
+    }
 }
